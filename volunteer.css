@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-image: url("image/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 5px 10px 24px #888888;
+  position: fixed;
+  z-index: 5;
+}
+.nav .logo {
+  width: 250px;
+  height: 100%;
+  margin-left: 30px;
+  margin-top: -20px;
+}
+.nav nav {
+  height: 100px;
+  width: 70%;
+  display: flex;
+  padding-right: 60px;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav nav a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+.nav nav a:hover {
+  color: #09cc7f;
+}
+.donation {
+  background-color: green;
+}
+.nav nav a.active {
+  color: blue;
+}
+.togglebtn {
+  display: none;
+  transition: width 2s;
+}
+
+.heading {
+  height: 100vh;
+  width: 600px;
+}
+.heading h1 {
+  display: block;
+  font-size: 70px;
+  margin-top: 200px;
+  margin-left: 75px;
+  color: #002d5b;
+}
+.headingimg {
+  height: 100vh;
+  width: 600px;
+  overflow: hidden;
+}
+.headingimg img {
+  overflow: hidden;
+  height: 100vh;
+  margin-left: 100px;
+  border-radius: 700px 700px;
+  border-style: solid;
+  border-width: 0px 0px 20px 10px;
+  border-color: #09cc7f;
+  transition: 0.3s;
+}
+.aboutus {
+  width: 100%;
+  height: 200vh;
+  padding: 50px;
+}
+.contactus {
+  width: 100%;
+  height: 100vh;
+
+  padding: 50px;
+}
+
+.about {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+.aboutimg {
+  width: 600px;
+  height: 400px;
+}
+.aboutimg img {
+  width: 600px;
+  height: 400px;
+}
+.story {
+  width: 600px;
+  height: 300px;
+}
+.mission {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.missionimg {
+  width: 600px;
+  height: 400px;
+}
+.missionimg img {
+  width: 600px;
+  height: 400px;
+}
+.ourmission {
+  width: 600px;
+  height: 300px;
+}
+
+.donationbtn {
+  background-color: #09cc7f;
+  padding: 20px 40px 20px 40px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 600;
+}
+.donationbtn:hover {
+  background-color: #24ac75;
+}
+@media only screen and (max-width: 700px) {
+  .nav {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-bottom: 20px;
+  }
+  .nav nav {
+    height: auto;
+    width: 100%;
+    display: none;
+    padding-right: 60px;
+    align-items: center;
+  }
+  .nav nav a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .togglebtn {
+    display: block;
+    text-align: right;
+    font-size: 40px;
+    margin-top: -70px;
+    padding: 0px 30px;
+    cursor: pointer;
+  }
+
+  .introimage {
+    width: 80%;
+    margin-top: 100px;
+  }
+}
+
+.card {
+  background-color: #fff;
+  cursor: pointer;
+
+  transition: background-color 2s linear;
+}
+.card:hover {
+  background-color: #09cc7f;
+  cursor: pointer;
+  color: #fff;
+}
+footer {
+  height: 100vh;
+  width: 100%;
+  background-color: #050722;
+  padding: 200px 100px 0px 100px;
+}
+
+.footer-area .footer-tittle h4 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-bottom: 29px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.footer-area .footer-tittle ul li {
+  color: rgb(134, 140, 152);
+  margin-bottom: 16px;
+}
+.footer-area .footer-tittle ul li a {
+  color: rgb(134, 140, 152);
+  font-weight: 300;
+}
+.footer-area .footer-form {
+  margin-top: 40px;
+}
+.footer-area .footer-form svg {
+  cursor: pointer;
+}
+
+/* Styling home section which contain the heading of the webpage */
+.Home {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  margin: 100px 0 50px;
+  /* align-items: center; */
+}
+
+.section-tittle h2 {
+  font-size: 42px;
+  display: block;
+  color: #072366;
+  font-weight: 800;
+  text-transform: capitalize;
+  line-height: 1.4;
+}
+
+/* Styling the content section */
+.content {
+  padding: 0 7%;
+  margin-bottom: 100px;
+}
+
+.content p {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: #484338;
+  /* text-transform: capitalize; */
+  /* display: inline-block; */
+  letter-spacing: 0.05em;
+}
+
+/* Styling form gettings details of volunteer */
+.form {
+  margin: 0 7% 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form .form-heading {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 22px;
+  color: #072366;
+  /* text-transform: capitalize; */
+  /* display: inline-block; */
+  letter-spacing: 0.05em;
+}
+
+.Name,
+.Mobile,
+.Email,
+.Age,
+.Occupation,
+.Qualities,
+.Skillset,
+.Reason {
+  padding: 16px 12px 15px;
+  margin: 20px 0;
+  width: 90%;
+  border: 1px solid rgba(165, 130, 81, 0.3);
+  color: #484338;
+}
+
+.Name:focus,
+.Mobile:focus,
+.Email:focus,
+.Age:focus,
+.Occupation:focus,
+.Qualities:focus,
+.Skillset:focus,
+.Reason:focus {
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #09cc7f;
+  padding: 20px 40px;
+  margin: 50px 0;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.submit-btn:hover {
+  background-color: #24ac75;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}

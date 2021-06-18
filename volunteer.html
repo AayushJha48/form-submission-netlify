@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>events_and_projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="volunteer.css" />
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="logo">
+          <img src="homelogo.png" width="50%" />
+        </div>
+        <span onclick="togle();" class="togglebtn">&#9776;</span>
+        <nav id="menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">about</a>
+          <a href="#">Volunteer</a>
+          <a href="#">Founders</a>
+          <a href="#">EVENTS & PROJECTS</a>
+          <a href="#">contact</a>
+          <button class="donationbtn">DONATION</button>
+        </nav>
+      </div>
+    </header>
+    <section class="Home">
+      <div class="section-tittle text-center mb-80">
+        <h2>Volunteer</h2>
+      </div>
+    </section>
+
+    <section class="content">
+      <p>
+        The heart of a volunteer is never measured in size, but by the depth of
+        the commitment to make a difference in the lives of others.
+      </p>
+      <p>
+        Join the community of volunteers who support BHENT's mission by offering
+        their time, skill and experience in meaningful ways. Lend a hand for a
+        few hours or more!
+      </p>
+    </section>
+
+    <form
+      name="volunteer"
+      method="post"
+      class="form shadow"
+      data-netlify="true"
+    >
+      <h3 class="form-heading">
+        Fill in the details below and you'll hear from us soon (* = Compulsory
+        fields) .
+      </h3>
+      <input
+        type="text"
+        name="Name"
+        class="Name"
+        placeholder="Name*"
+        required
+      />
+      <input
+        type="text"
+        name="Mobile"
+        class="Mobile"
+        placeholder="Mobile*"
+        required
+      />
+      <input
+        type="email"
+        name="Email"
+        class="Email"
+        placeholder="Email*"
+        required
+      />
+      <input type="text" name="Age" class="Age" placeholder="Age" />
+      <input
+        type="text"
+        name="Occupation"
+        class="Occupation"
+        placeholder="Occupation"
+      />
+      <input
+        type="text"
+        name="Qualities"
+        class="Qualities"
+        placeholder="Your Qualities"
+      />
+      <input
+        type="text"
+        name="Skillset"
+        class="Skillset"
+        placeholder="Your Skillset"
+      />
+      <input
+        type="text"
+        name="Reason"
+        class="Reason"
+        placeholder="Why do you want to join us ? *"
+        required
+      />
+      <button type="submit" class="submit-btn donationbtn">Submit</button>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+      <div
+        class="footer-wrapper section-bg2"
+        data-background="assets/img/gallery/footer_bg.png"
+        style="background-image: url('assets/img/gallery/footer_bg.png')"
+      >
+        <div class="footer-area footer-padding">
+          <div class="container">
+            <div class="row d-flex justify-content-between">
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                <div class="single-footer-caption mb-50">
+                  <div class="single-footer-caption mb-30">
+                    <div class="footer-tittle">
+                      <div class="footer-logo mb-20">
+                        <a href="index.html"
+                          ><img src="homelogo2.png" width="100%"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>Contact Info</h4>
+                    <ul>
+                      <li>
+                        <p>
+                          Address :Your address goes here, your demo address.
+                        </p>
+                      </li>
+                      <li><a href="#">Phone : +8880 44338899</a></li>
+                      <li><a href="#">Email : info@colorlib.com</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>Important Link</h4>
+                    <ul>
+                      <li><a href="#"> View Project</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Testimonial</a></li>
+                      <li><a href="#">Proparties</a></li>
+                      <li><a href="#">Support</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                <div class="single-footer-caption mb-50">
+                  <div class="footer-tittle">
+                    <h4>Newsletter</h4>
+                    <div class="footer-pera footer-pera2">
+                      <p>
+                        Heaven fruitful doesn't over lesser in days. Appear
+                        creeping.
+                      </p>
+                    </div>
+
+                    <div class="footer-form">
+                      <div id="mc_embed_signup">
+                        <form action="" method="">
+                          <input
+                            type="email"
+                            name="EMAIL"
+                            id="newsletter-form-email"
+                            placeholder="Email Address"
+                            class="placeholder hide-on-focus"
+                            onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = ' Email Address '"
+                          />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="40"
+                            height="40"
+                            fill="currentColor"
+                            class="bi bi-telegram text-success"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+                            />
+                          </svg>
+                          <div class="mt-10 info"></div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
